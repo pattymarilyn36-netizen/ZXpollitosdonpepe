@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pollos Don Pepe - Pollos Asados y Más</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #ffcc00; /* Amarillo pollo */
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        header img {
+            width: 100px;
+            height: auto;
+        }
+        header h1 {
+            color: #d32f2f; /* Rojo */
+            margin: 10px 0;
+        }
+        nav {
+            background-color: #d32f2f;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .menu-item {
+            display: flex;
+            margin-bottom: 20px;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .menu-item img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .menu-item .details {
+            padding: 15px;
+            flex: 1;
+        }
+        .menu-item h3 {
+            color: #d32f2f;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(33.333% - 10px);
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .contact {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #25d366; /* Verde WhatsApp */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://via.placeholder.com/100x100?text=Logo" alt="Logo Pollos Don Pepe"> <!-- Reemplaza con tu logo real -->
+        <h1>Bienvenidos a Don Pepe</h1>
+        <p>Los pollos más deliciosos de la ciudad</p>
+    </header>
+    
+    <nav>
+        <a href="#menu">Menú</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#opiniones">Opiniones</a>
+    </nav>
+    
+    <section id="menu">
+        <h2>Nuestro Menú</h2>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pollo Asado">
+            <div class="details">
+                <h3>Pollo Asado</h3>
+                <p>Pollo jugoso asado a la perfección, con hierbas y especias tradicionales. Acompañado de papas fritas y ensalada.</p>
+                <p><strong>Precio: $15.00</strong></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pollo a la Brasa">
+            <div class="details">
+                <h3>Pollo a la Brasa</h3>
+                <p>Pollo marinado y cocinado en brasa, crujiente por fuera y tierno por dentro. Ideal con arroz y verduras.</p>
+                <p><strong>Precio: $18.00</strong></p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bebidas">
+            <div class="details">
+                <h3>Bebidas Acompañantes</h3>
+                <p>Refrescos, jugos naturales o cervezas frías para refrescarte. Incluye opciones sin azúcar.</p>
+                <p><strong>Precio: $3.00 - $5.00</strong></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="galeria">
+        <h2>Galería de Platillos</h2>
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1598103442097-8b74394b95c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pollo Asado">
+            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Pollo a la Brasa">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bebidas">
+        </div>
+    </section>
+    
+    <section id="contacto" class="contact">
+        <h2>Contacto</h2>
+        <p><strong>Dirección:</strong> Calle Ficticia 123, Ciudad, País</p> <!-- Reemplaza con tu dirección real -->
+        <p><strong>WhatsApp:</strong> +1234567890</p> <!-- Reemplaza con tu número real -->
+        <a href="https://wa.me/1234567890?text=Hola%20Don%20Pepe,%20quiero%20hacer%20un%20pedido" target="_blank">Pedir por WhatsApp</a>
+        <a href="https://www.facebook.com/pollosdonpepe" target="_blank">Síguenos en Facebook</a> <!-- Reemplaza con tu enlace real -->
+    </section>
+    
+    <section id="opiniones">
+        <h2>Deja tu Opinión</h2>
+        <form action="mailto:tuemail@ejemplo.com" method="post" enctype="text/plain"> <!-- Reemplaza con tu email -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="opinion">Opinión:</label>
+            <textarea id="opinion" name="opinion" rows="5" required></textarea>
+            
+            <button type="submit">Enviar Opinión</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Pollos Don Pepe. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script>
+        // JavaScript simple para validar el formulario (opcional)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            alert('¡Gracias por tu opinión! La enviaremos pronto.');
+        });
+    </script>
+</body>
+</html>
